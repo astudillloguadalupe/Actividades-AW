@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Valentina Suárez</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contacto</h1>
+
+        <p>
+            Si querés consultar por una sesión fotográfica, conocer más detalles
+            sobre algún servicio o solicitar información, completá el siguiente formulario.
+        </p>
+
+        <form action="./contacto.html" method="post">
+
+            <label for="id-nombre">Nombre y apellido</label>
+            <input type="text" name="nombre" id="id-nombre">
+
+            <br><br>
+
+            <label for="id-email">Correo electrónico</label>
+            <input type="email" name="email" id="id-email">
+
+            <br><br>
+
+            <label for="id-telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="id-telefono">
+
+            <br><br>
+
+            <label for="id-servicio">Servicio de interés</label>
+            <select name="servicio" id="id-servicio">
+                <option value="personal">Sesión personal</option>
+                <option value="parejas">Parejas</option>
+                <option value="familia">Familia</option>
+                <option value="eventos">Eventos</option>
+                <option value="productos">Productos</option>
+                <option value="redes">Contenido para redes sociales</option>
+            </select>
+
+            <br><br>
+
+            <label for="id-fecha">Fecha aproximada</label>
+            <input type="date" name="fecha" id="id-fecha">
+
+            <br><br>
+
+            <label for="id-mensaje">Mensaje o consulta</label>
+            <textarea name="mensaje" id="id-mensaje"></textarea>
+
+            <br><br>
+
+            <button type="reset">
+                Limpiar
+            </button>
+
+            <button type="submit">
+                Enviar consulta
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            Valentina Suárez - Fotografía profesional
+        </p>
+    </footer>
+
+</body>
+</html>
