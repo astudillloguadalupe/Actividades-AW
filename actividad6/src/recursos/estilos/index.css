@@ -1,0 +1,120 @@
+/*GENERICOS*/
+
+/* Modelo de caja alternativo */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Selectores de tipo */
+
+body {
+    background-color: #f5f2ed;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+.cabecera-principal {
+    padding: 20px;
+    background-color: #2f2c2a;
+    border-bottom: 3px solid #b99b7a;
+}
+
+.navegacion-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion-principal li {
+    display: inline;
+}
+
+.cabecera-principal .navegacion-principal a {
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.contenido-principal {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.pie-principal {
+    padding: 20px;
+    background-color: #2f2c2a;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999999;
+}
+
+button {
+    padding: 10px 18px;
+    margin-right: 10px;
+}
