@@ -1,0 +1,70 @@
+Correcciones realizadas sobre la Actividad 6 de Roldán
+
+1. Se normalizaron nombres de archivos y carpetas en minúscula.
+
+2. Se corrigió el atributo de idioma de:
+   lang="en"
+   a:
+   lang="es"
+
+3. Se corrigió la ubicación del footer para que quede dentro del body.
+
+4. Se agregó la clase:
+   footer-principal
+   al footer de la página principal.
+
+5. Se corrigió un espacio innecesario en:
+   class="contenido-principal"
+
+6. Se corrigió el nombre del archivo:
+   .fiverserverrc
+   por:
+   .fiveserverrc
+
+7. Se normalizó el nombre del proyecto en package.json a minúscula.
+
+CAMBIOS REALIZADOS PARA LA ACTIVIDAD 7
+
+8. Se reorganizó el encabezado para incorporar una navegación principal.
+
+9. Se aplicó Flexbox al encabezado mediante:
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+10. Se agregó una navegación con vínculos a:
+    Inicio
+    Contacto
+
+11. Se aplicó:
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    para mantener visible el encabezado durante el scroll.
+
+12. Se aplicó CSS Grid al layout general mediante:
+    display: grid;
+
+13. Se definieron tres filas para organizar el layout:
+    grid-template-rows: auto 1fr auto;
+
+14. Se agregó:
+    min-height: 100vh;
+    para que el layout ocupe como mínimo toda la altura de la ventana.
+
+15. Se agregó un vínculo flotante de mensajería externa en la esquina inferior derecha.
+
+16. Se utilizó una imagen como ícono del vínculo flotante.
+
+17. Se aplicó:
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    para mantener visible el vínculo flotante durante el scroll.
+
+18. Se agregó un favicon en las páginas del sitio.
+
+19. Se incorporó el favicon dentro del head mediante:
+    <link rel="icon" type="image/png" href="./imagenes/eleccion-de-idioma.png">
+
+20. Se verificó el funcionamiento de los cambios utilizando Five Server.

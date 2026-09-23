@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Martin Aguilar</title>
+   <link rel="icon" type="image/png" href="./imagegnes/eleccion-de-idioma.png">
+    <link rel="stylesheet" href="./estilos/index.css">
+</head>
+
+<body>
+    <header class="header-principal">
+        <h1>Martín Aguilar</h1>
+        <nav class="navegacion-principal">
+            <a href="./index.html">Inicio</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+
+        <p>Completá el siguiente formulario contándome sobre el documento o proyecto que necesitás traducir. Te voy a responder a la brevedad para coordinar los detalles y darte un presupuesto.</p>
+
+        <form action="#" method="post" class="bloque-formulario">
+
+            <p>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+           
+            <p>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </p>
+           
+            <p>
+                <label for="tipo_documento">Tipo de documento a traducir:</label>
+                <select id="tipo_documento" name="tipo_documento">
+                    <option value="partida_nacimiento">Partida de nacimiento</option>
+                    <option value="partida_matrimonio">Partida de matrimonio</option>
+                    <option value="titulo_analitico">Título/analítico</option>
+                    <option value="contrato">Contrato</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="idioma_origen">Idioma de origen:</label>
+                <select id="idioma_origen" name="idioma_origen">
+                    <option value="espanol">Español</option>
+                    <option value="ingles">Inglés</option>
+                    <option value="italiano">Italiano</option>
+                </select>
+            </p>
+
+            <p>
+                
+                <label for="idioma_destino">Idioma de destino:</label>
+                <select id="idioma_destino" name="idioma_destino">
+                    <option value="espanol">Español</option>
+                    <option value="ingles">Inglés</option>
+                    <option value="italiano">Italiano</option>
+                </select>
+
+            </p>
+          
+            <p>
+                <label for="certificada">¿Necesita traducción certificada?</label>
+                <select id="certificada" name="certificada">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="no_seguro">No estoy seguro/a</option>
+                </select> 
+            </p>
+            
+            <label for="mensaje">Mensaje / detalles adicionales:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="40"></textarea>
+
+            <div class="campo-submit">
+                <input type="submit" value="Enviar consulta">
+            </div>
+
+        </form>
+        <a href="index.html" class="enlace-navegacion">Volver a la página principal</a>
+
+    </main>
+
+    <footer class="footer-principal">
+        <p>&copy; 2026 Martín Aguilar - Traductor Público Matriculado</p>
+    </footer>
+
+    <a class="mensajeria-flotante"
+       href="https://wa.me/543511234567"
+       target="_blank"
+       aria-label="Contactar por WhatsApp">
+
+        <img src="./imagenes/mensaje.png" alt="Ícono de mensajería">
+
+    </a>
+</body>
+</html>
+
+        
