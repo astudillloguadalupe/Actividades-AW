@@ -1,0 +1,178 @@
+
+
+@font-face {
+    font-family: 'Sora';
+    src: url('./fuentes/Sora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+    font-family: 'Sora', Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f5f3ed;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.encabezado-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px 30px;
+    background-color: #405c4b;
+    color: white;
+}
+
+.encabezado-principal img {
+    width: 110px;
+}
+
+.encabezado-principal ul {
+    display: flex;
+    gap: 25px;
+}
+
+.encabezado-principal a {
+    color: white;
+}
+
+
+
+.contenido-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+    min-height: 75vh;
+}
+
+
+
+.pie-principal {
+    background-color: #405c4b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.pie-principal p {
+    margin-bottom: 0;
+}
+
+
+.catalogo-cabanas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.catalogo-cabanas > h2,
+.catalogo-cabanas > p {
+    width: 100%;
+}
+
+
+
+.tarjeta-cabana {
+    flex: 1 1 250px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.tarjeta-cabana img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tarjeta-cabana a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #405c4b;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.formulario-reservas {
+    max-width: 600px;
+    padding: 25px;
+    margin-top: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.formulario-reservas button {
+    background-color: #405c4b;
+    color: white;
+}

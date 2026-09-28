@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retiro Sustentable - Reservas</title>
+
+    <!-- Vinculamos el mismo CSS para mantener un diseño uniforme en ambas páginas. -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<body>
+
+    <!-- Header semántico para la identidad y navegación del sitio. -->
+    <header class="encabezado-principal">
+
+        <!-- El logo enlaza al inicio. Alt describe su función para accesibilidad. -->
+        <a href="./index.html">
+            <img src="./recursos/imagenes/logo-rs.svg"
+                 alt="Retiro Sustentable - Ir al inicio">
+        </a>
+
+        <!-- Nav agrupa los enlaces principales de ambas páginas. -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main contiene la información principal de esta página. -->
+    <main class="contenido-principal">
+
+        <h1>Reservas</h1>
+        <h2>Contactanos</h2>
+
+        <p>
+            Completá el siguiente formulario para consultar
+            disponibilidad en nuestras cabañas.
+        </p>
+
+        <!-- POST evita incorporar los datos personales en la URL.
+             Para recibir reservas realmente, será necesario un servidor. -->
+        <form class="formulario-reservas" action="#" method="post">
+
+            <!-- Cada label se vincula mediante for con el id del campo. -->
+
+            <label for="nombre">Nombre completo:</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+            >
+
+            <label for="telefono">Teléfono:</label>
+            <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+            >
+
+            <label for="email">Correo electrónico:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <label for="fecha-desde">Fecha desde:</label>
+            <input
+                type="date"
+                id="fecha-desde"
+                name="fecha_desde"
+                required
+            >
+
+            <label for="fecha-hasta">Fecha hasta:</label>
+            <input
+                type="date"
+                id="fecha-hasta"
+                name="fecha_hasta"
+                required
+            >
+
+            <label for="comentario">Comentario:</label>
+            <textarea
+                id="comentario"
+                name="comentario"
+                rows="5"
+                placeholder="Escribí tu consulta aquí..."
+            ></textarea>
+
+            <button type="submit">Enviar consulta</button>
+
+        </form>
+
+    </main>
+
+    <!-- Footer semántico con información institucional. -->
+    <footer class="pie-principal">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
