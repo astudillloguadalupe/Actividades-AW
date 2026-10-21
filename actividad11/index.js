@@ -96,5 +96,3 @@ const resta = (a, b) => {
 // Probamos la función operacion
 operacion(10, 5, suma);
 operacion(10, 5, resta);
-
-// Probamos qué sucede si
