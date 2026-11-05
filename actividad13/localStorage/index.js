@@ -1,26 +1,27 @@
 console.log('JavaScript conectado')
 
-const boton = document.querySelector('button')
-const cantidadCarrito = document.querySelector('span')
+const botonCarrito = document.getElementById('boton-carrito')
+const cantidadCarrito = document.getElementById('carro')
 
-let carrito = localStorage.getItem('carrito')
+let carrito = []
 
-if(carrito === null){
-    carrito = 0
+const valorGuardado = localStorage.getItem('carrito')
+
+if(valorGuardado){
+    carrito = JSON.parse(valorGuardado)
 }
-else{
-    carrito = Number(carrito)
-}
 
-cantidadCarrito.textContent = carrito
+cantidadCarrito.textContent = carrito.length
 
 
-boton.addEventListener('click', ()=>{
+botonCarrito.addEventListener('click', ()=>{
 
-    carrito = carrito + 1
+    carrito.push(1)
 
-    cantidadCarrito.textContent = carrito
+    cantidadCarrito.textContent = carrito.length
 
-    localStorage.setItem('carrito', carrito)
+    const carritoAGuardar = JSON.stringify(carrito)
+
+    localStorage.setItem('carrito', carritoAGuardar)
 
 })
